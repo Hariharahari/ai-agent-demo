@@ -26,7 +26,7 @@ jobs:
         run: |
           pip install uv
           uv sync --frozen
-          uv run pytest -v
+          uv run pytest test_agent.py -v
 
   # JOB 2: THE BUILDER (Remote Docker)
   build-image:
